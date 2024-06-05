@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Chapters 9-25 Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            display: block;
+            margin: 10px 0;
+        }
+        .code-block {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .link a{
+            color: #007BFF;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Chapters 9-25 Summary</h1>
+
+    <h2> <a href="./chapter  9-11/index.html">Chapter 9-11: User Input & Conditional Statement</a></h2>
+    
+    <h3>User Input</h3>
+    <p>User input in JavaScript can be taken using the <code>prompt()</code> function or through form elements in HTML.</p>
+    <div class="code-block">
+        <code>
+            const name = prompt("Enter your name:");
+            alert(`Hello, ${name}!`);
+        </code>
+    </div>
+
+    <h3>Conditional Statements</h3>
+    <p>Conditional statements control the flow of the program based on conditions:</p>
+    <ul>
+        <li><strong>if statement:</strong> Executes a block of code if a specified condition is true.</li>
+        <li><strong>else statement:</strong> Executes a block of code if the condition in the if statement is false.</li>
+        <li><strong>else if statement:</strong> Tests multiple conditions, executing the corresponding block of code for the first true condition.</li>
+    </ul>
+    <div class="code-block">
+        <code>
+            const age = prompt("Enter your age:");<br>
+            if (age < 18) {<br>
+            &nbsp;&nbsp;alert("You are a minor.");<br>
+            } else if (age < 65) {<br>
+            &nbsp;&nbsp;alert("You are an adult.");<br>
+            } else {<br>
+            &nbsp;&nbsp;alert("You are a senior.");<br>
+            }
+        </code>
+    </div>
+
+    <h2><a href="./chapter  12-13/index.html">Chapter 12-13: IF...ELSE & ELSE IF Statement, Testing Set of Conditions</a></h2>
+
+    <h3>IF...ELSE & ELSE IF Statement</h3>
+    <p>The if...else and else if statements are used to execute code based on specific conditions.</p>
+    <div class="code-block">
+        <code>
+            const score = 85;<br>
+            if (score >= 90) {<br>
+            &nbsp;&nbsp;console.log("Grade: A");<br>
+            } else if (score >= 80) {<br>
+            &nbsp;&nbsp;console.log("Grade: B");<br>
+            } else if (score >= 70) {<br>
+            &nbsp;&nbsp;console.log("Grade: C");<br>
+            } else {<br>
+            &nbsp;&nbsp;console.log("Grade: F");<br>
+            }
+        </code>
+    </div>
+
+    <h3>Testing Set of Conditions</h3>
+    <p>Testing a set of conditions can be done using multiple else if statements or using logical operators within a single if statement.</p>
+    <div class="code-block">
+        <code>
+            const day = "Monday";<br>
+            if (day === "Saturday" || day === "Sunday") {<br>
+            &nbsp;&nbsp;console.log("It's a weekend!");<br>
+            } else {<br>
+            &nbsp;&nbsp;console.log("It's a weekday.");<br>
+            }
+        </code>
+    </div>
+
+    <h2><a href="./chapter  14-16/index.html">Chapter 14-16: Arrays and Loop</a></h2>
+
+    <h3>Arrays</h3>
+    <p>Arrays are used to store multiple values in a single variable:</p>
+    <ul>
+        <li><strong>Array literals:</strong> Define arrays using square brackets.</li>
+        <li><strong>Array methods:</strong> Perform operations on arrays (e.g., push, pop, shift, unshift).</li>
+    </ul>
+    <div class="code-block">
+        <code>
+            const fruits = ["Apple", "Banana", "Cherry"];<br>
+            fruits.push("Orange");<br>
+            console.log(fruits); // ["Apple", "Banana", "Cherry", "Orange"]
+        </code>
+    </div>
+
+    <h3>Loop</h3>
+    <p>Loops execute a block of code multiple times:</p>
+    <ul>
+        <li><strong>for loop:</strong> Repeats a block of code a certain number of times.</li>
+        <li><strong>while loop:</strong> Repeats a block of code as long as a specified condition is true.</li>
+        <li><strong>do...while loop:</strong> Executes a block of code once before checking if the condition is true, then repeats the loop as long as the condition is true.</li>
+    </ul>
+    <div class="code-block">
+        <code>
+            for (let i = 0; i < fruits.length; i++) {<br>
+            &nbsp;&nbsp;console.log(fruits[i]);<br>
+            }
+        </code>
+    </div>
+
+    <h2><a href="./chapter  17-20/index.html">Chapter 17-20: USER INPUT & CONDITIONAL STATEMENT</a></h2>
+    <h2><a href="./chapter  21-25/index.html">Chapter 20-25: String Methods</a></h2> 
+    <h3>String Methods</h3>
+    <p>String methods are used to perform operations on strings:</p>
+    <ul>
+        <li><strong>length:</strong> Returns the length of a string.</li>
+        <li><strong>toUpperCase():</strong> Converts a string to uppercase letters.</li>
+        <li><strong>toLowerCase():</strong> Converts a string to lowercase letters.</li>
+        <li><strong>slice(start, end):</strong> Extracts a part of a string and returns it as a new string.</li>
+        <li><strong>substring(start, end):</strong> Extracts characters from a string, between two specified indices.</li>
+        <li><strong>replace(searchValue, newValue):</strong> Replaces occurrences of a substring with a new substring.</li>
+        <li><strong>trim():</strong> Removes whitespace from both ends of a string.</li>
+    </ul>
+    <div class="code-block">
+        <code>
+            const text = "  Hello, World!  ";<br>
+            console.log(text.length); // 17<br>
+            console.log(text.toUpperCase()); // "  HELLO, WORLD!  "<br>
+            console.log(text.toLowerCase()); // "  hello, world!  "<br>
+            console.log(text.slice(2, 7)); // "Hello"<br>
+            console.log(text.replace("World", "JavaScript")); // "  Hello, JavaScript!  "<br>
+            console.log(text.trim()); // "Hello, World!"
+        </code>
+    </div>
+
+    <h2 class="link">For more details, visit the official <a href="http://www.ASmarterWayToLearn.com/js">A Smarter Way to Learn JavaScript</a></h2>
+</body>
+</html>
